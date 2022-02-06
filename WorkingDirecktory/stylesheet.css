@@ -10,7 +10,10 @@ header,footer
 {
   background-color: #4169e1;
 }
-h1{font-size: 25px;}h2{font-size: 21px;}h3{font-size: 18px;}h4{font-size: 16px;}
+h1{font-size: 25px;}
+h2{font-size: 21px;}
+h3{font-size: 18px;}
+h4{font-size: 16px;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 
 .topnav {
@@ -71,8 +74,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
   color: white;
   text-align: center;
 }
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-.table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+ td, th{
+  border-collapse: collapse;
+ }
