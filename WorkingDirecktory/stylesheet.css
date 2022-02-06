@@ -10,6 +10,11 @@ header,footer
 {
   background-color: #4169e1;
 }
+main {
+	float: left;
+	width: 60%;
+}
+
 h1{font-size: 25px;}
 h2{font-size: 21px;}
 h3{font-size: 18px;}
@@ -30,20 +35,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
     text-decoration: none;
     font-size: 17px;
   }
-  
-  /* Change the color of links on hover */
+
   .topnav a:hover {
     background-color: #5161b9bb;
     color: black;
   }
-  
-  /* Add a color to the active/current link */
   .topnav a.active {
     background-color: #001ec5;
     color: white;
   }
 
-  /* Style the header */
   header {
     background-color: #666;
     padding: 30px;
@@ -83,3 +84,8 @@ table{
  td, th{
   border-collapse: collapse;
  }
+ @media screen and (max-width: 600px) {
+	main {
+		float: none;
+		width: 100%;
+	}
