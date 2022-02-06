@@ -55,17 +55,17 @@ public class registerServlet extends HttpServlet
 
 	public void initJDBC ()
 	{
-	try {
-	Class.forName("com.mysql.jdbc.Driver");
-	Connection conn = DriverManager . getConnection (
-	"jdbc:mysql://localhost/servletdb",
-	"root", "password");
-	ps = conn. prepareStatement ("insert into user " +
-	"(fname , lname , email , password) " +
-	"values (?,?,?,?)");
-	} catch ( Exception ex){
-	System.out.println(ex. getMessage ());
-	}
+		try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection conn = DriverManager . getConnection (
+		"jdbc:mysql://localhost/servletdb",
+		"root", "password");
+		ps = conn. prepareStatement ("insert into user " +
+		"(fname , lname , email , password) " +
+		"values (?,?,?,?)");
+		} catch ( Exception ex){
+		System.out.println(ex. getMessage ());
+		}
 	}
 	public void addUser(String fname , String lname ,
 	String email , String pass) throws SQLException

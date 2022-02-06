@@ -1,3 +1,4 @@
+
 html
 {
   line-height:1; font-family: arial;
@@ -9,7 +10,16 @@ body
 header,footer
 {
   background-color: #4169e1;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-decoration: none;
 }
+
+
+
 h1{font-size: 25px;}
 h2{font-size: 21px;}
 h3{font-size: 18px;}
@@ -17,8 +27,10 @@ h4{font-size: 16px;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 
 .topnav {
+    background-color: #4169e1;
     background-color: transparent;
     overflow: hidden;
+    text-decoration: none;
   }
   
   /* Style the links inside the navigation bar */
@@ -27,7 +39,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
     font-size: 17px;
   }
   
@@ -40,15 +51,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
   /* Add a color to the active/current link */
   .topnav a.active {
     background-color: #001ec5;
-    color: white;
-  }
-
-  /* Style the header */
-  header {
-    background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
     color: white;
   }
   
