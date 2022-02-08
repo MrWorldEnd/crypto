@@ -1,0 +1,19 @@
+--CREATE TABLES
+create table cryptoWatchlist(
+	ID		VARCHAR(50)
+		CONSTRAINT pk_crypto PRIMARY KEY,
+	name	VARCHAR(50),
+	price	DECIMAL,
+	24h%	DECIMAL,
+	7d%		DECIMAL
+);
+create table PORTFOLIO(
+	ID		VARCHAR(50)
+		CONSTRAINT pk_crypto PRIMARY KEY,
+	name VARCHAR(50),
+	openPrice DECIMAL,
+	currentprice DECIMAL,
+CONSTRAINT fk_currentprice FOREIGN KEY (currentprice DECIMAL)
+		REFERENCES department,
+	quantity DECIMAL
+);
