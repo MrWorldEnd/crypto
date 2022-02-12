@@ -11,21 +11,49 @@ public class Cryptocurrency {
     private long marketcap;
     private long volume;
 
-    public String getname() {return this.name;}
-    public String getprefix() {return this.prefix;}
+    public String getname() {
+        return this.name;
+    }
 
-    public double getprice() {return this.price;}
-    public double getdayP() {return this.dayPchange;}
-    public double getweekP() {return this.weekPchang;}
-    public double getmonthP() {return this.monthPchange;}
-    public double getyearP() {return this.yearPchange;}
+    public String getprefix() {
+        return this.prefix;
+    }
 
+    public double getprice() {
+        return this.price;
+    }
 
-    public long getmarketcap() {return this.marketcap;}
-    public long getvolume() {return this.volume;}
+    public double getdayP() {
+        return this.dayPchange;
+    }
 
-    public String getl(){
+    public double getweekP() {
+        return this.weekPchang;
+    }
+
+    public double getmonthP() {
+        return this.monthPchange;
+    }
+
+    public double getyearP() {
+        return this.yearPchange;
+    }
+
+    public long getmarketcap() {
+        return this.marketcap;
+    }
+
+    public long getvolume() {
+        return this.volume;
+    }
+
+    public String getl() {
         String div = "</td><td>";
-        return "<td>" + this.name + div + this.prefix + div + this.price + div + this.dayPchange + div + this.weekPchang + "</td>";
+        return "<td>" + this.name + div + this.prefix + div + this.price + div + this.dayPchange + div + this.weekPchang
+                + "</td>";
+    }
+    public Cryptocurrency[] {
+        Cryptocurrency x = 0;
+        return x;
     }
 }
