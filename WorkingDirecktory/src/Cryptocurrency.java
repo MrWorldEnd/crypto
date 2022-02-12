@@ -24,4 +24,8 @@ public class Cryptocurrency {
     public long getmarketcap() {return this.marketcap;}
     public long getvolume() {return this.volume;}
 
+    public String getl(){
+        String div = "</td><td>";
+        return "<td>" + this.name + div + this.prefix + div + this.price + div + this.dayPchange + div + this.weekPchang + "</td>";
+    }
 }

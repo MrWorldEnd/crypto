@@ -1,25 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package iijhi;
+package src;
 
 import javax.inject.Named;
-import javax.enterprise.context.Dependent;
+import javax.enterprise.context.RequestScooped;
 
 /**
  *
  * @author st1259
  */
-@Named(value = "newJSFManagedBean")
-@Dependent
-public class NewJSFManagedBean {
 
-    /**
-     * Creates a new instance of NewJSFManagedBean
-     */
+@Named(value = "newJSFManagedBean")
+@RequestScooped
+public class NewJSFManagedBean {
     public NewJSFManagedBean() {
     }
+    public String getCrypto(CryptoMarket market){
+        String plint;
+        Cryptocurrency[] tmparr = market.getCryptocoins();
+        int x = 0;
     
+        while(tmparr.length > x){
+            System.out.println(tmparr[x].getl());
+            x++;
+        }
+        return plint;
+    }
 }
