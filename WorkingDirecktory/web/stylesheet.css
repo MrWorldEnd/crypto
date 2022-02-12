@@ -1,0 +1,89 @@
+
+html
+{
+  line-height:1; font-family: arial;
+}
+body 
+{
+  background-color: #2c3539d8;
+}
+header,footer
+{
+  background-color: #4169e1;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+h1{font-size: 25px;}
+h2{font-size: 21px;}
+h3{font-size: 18px;}
+h4{font-size: 16px;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+
+.topnav {
+    background-color: #4169e1;
+    background-color: transparent;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #001ec5;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #000833;
+    color: white;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4169e1;
+  color: white;
+  text-align: center;
+}
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ th{
+   background-color: #4169e1;
+   text-align: center;
+ }
+
+ td{
+  background-color: white;
+  text-align: center;
+ }
