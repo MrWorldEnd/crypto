@@ -16,7 +16,18 @@
 </header>
 
 <body>
-
+<form action ="serverscript.php" method="POST">
+  <label for = "Currencty">Choose currency</label>
+  <select name="CryptoCurrencty" id="CryptoCurrencty">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+	<label for = "Quantity">Enter Quantity: </label><br>
+  <input type = "text" id = "WalletQuantity" value="How much you got?">
+  <input type= "submit" value="Submit">
+</form>
 </body>
 
 <footer>
