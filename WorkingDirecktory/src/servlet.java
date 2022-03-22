@@ -75,22 +75,5 @@ public class registerServlet extends HttpServlet {
 		ps.executeUpdate();
 	}
 
-	public void printtop10(String x, currency[] cry){
-		//x is chouce of currency output
-		out.println("<table");
-		out.println("
-		<th>Currency</th>
-		<th>Quantety</th>
-		<th>USD value</th>
-		";)
-		if(x == GBP)
-			out.println("<th>Pound value</th>");
-		else
-			out.println("<th>USD value</th>")	
-		while(int n < 10){
-			out.println(cry[n].getl());
-			n++;
-		}
-		out.println("</table>");
-	}
+	
 }
