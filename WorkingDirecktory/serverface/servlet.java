@@ -1,7 +1,7 @@
-import java.io .∗;
-import java.sql .∗;
-import javax.servlet. ServletException ;
-import javax.servlet.http .∗;
+import java.io.*;
+import java.sql.*;
+import javax.servlet.ServletException ;
+import javax.servlet.http.*;
 
 public class registerServlet extends HttpServlet
 {

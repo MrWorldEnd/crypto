@@ -1,15 +1,15 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.ServletException ;
-import javax.servlet.http.*;
+import javax.inject.Named;
+import javax.enterprise.context.RequestScoped;
 
-public class FirstServlet extends HttpServlet 
+@Named (value = "cryptoBean")
+@RequestScoped
+
+public class cryptoBean
 {
-
-	protected void doGet( HttpServletRequest request ,
-	HttpServletResponse response)
-	throws ServletException , IOException 
+	public cryptoBean()
 	{
 
 		String name = request. getParameter ("name");
@@ -25,4 +25,8 @@ public class FirstServlet extends HttpServlet
 			out.println("</body ></html >");
 		}
 	}
+	public String getcryptoBean()
+	{
+		String x = "b  ";
+		return x;}
 }
