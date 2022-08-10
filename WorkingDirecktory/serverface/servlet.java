@@ -3,7 +3,7 @@ import java.sql.*;
 import javax.servlet.ServletException ;
 import javax.servlet.http.*;
 
-public class registerServlet extends HttpServlet
+public class ajaxServlet extends HttpServlet
 {
 	private PreparedStatement ps;
 
@@ -11,6 +11,7 @@ public class registerServlet extends HttpServlet
 	{
 		initJDBC ();
 	}
+	
 	protected void doGet( HttpServletRequest request ,
 	HttpServletResponse response)
 	throws ServletException , IOException

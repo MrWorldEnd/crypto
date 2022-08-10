@@ -1,7 +1,5 @@
-import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.servlet.ServletException ;
+import java.io.*;
+import javax.servlet.* ;
 import javax.servlet.http.*;
 
 public class FirstServlet extends HttpServlet 
@@ -12,17 +10,11 @@ public class FirstServlet extends HttpServlet
 	throws ServletException , IOException 
 	{
 
-		String name = request. getParameter ("name");
-		response. setContentType ("text/html;charset=UTF−8");
-		try ( PrintWriter out = response. getWriter ()) 
+		String name = request.getParameter ("name");
+		response.setCharacterEncoding("UTF-8");
+		try ( PrintWriter out = new PrintWriter(response.getOutputStream())) 
 		{
-			out.println("<!DOCTYPE html >");
-			out.println("<html ><head >");
-			out.println("<title >FirstServlet </title >");
-			out.println("</head ><body >");
-			out.println("<h1>FirstServlet </h1>");
 			out.println("<p>Hello " + name + "</p>");
-			out.println("</body ></html >");
 		}
 	}
 }
